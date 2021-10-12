@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="../dist/bundle.min.js"></script>
+
+  <title>Teste dos arquivos finais Gulp</title>
+</head>
+<body>
+
+  <main>
+    <p>
+      <label for="input1">input1</label>
+      <input type="text" name="input1" id="input1">
+    </p>
+    <p>
+      <label for="input2">input2</label>
+      <input type="text" name="input2" id="input2">
+    </p>
+    <input type="text" name="resultado" id="resultado" readonly>
+    <button type="button" id="botao">Somar</button>
+  </main>
+  <script>
+    const input1 = document.getElementById('input1');
+    const input2 = document.getElementById('input2');
+    const resultado = document.getElementById('resultado');
+    const botao = document.getElementById('botao');
+
+    botao.onclick = function() {
+      const v1 = input1.value !== '' ? Number(input1.value) : 0;
+      const v2 = input2.value !== '' ? Number(input2.value) : 0;
+      const r = v1 + v2;
+      resultado.value = r;
+    }
+  </script>
+</body>
+</html>
