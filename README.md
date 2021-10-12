@@ -14,7 +14,7 @@ Projeto criado para testar o automatizador de tarefas gulp
 
 ## Executando o projeto
 
-Entre no diretório principal e instale as dependências do projeto utilizando o comando:
+Instale as dependências do projeto utilizando o comando:
 ```bash
 npm install
 ```
