@@ -1,7 +1,7 @@
-const objInitial = {
-  nome: "Guilherme Santos",
-  idade: 29,
-  cidade: "São Paulo"
+const person = {
+  name: "Guilherme Santos",
+  age: 30,
+  city: "São Paulo"
 };
 
 const add = "ADD string";

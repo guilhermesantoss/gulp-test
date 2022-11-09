@@ -29,10 +29,12 @@
     const resultado = document.getElementById('resultado');
     const botao = document.getElementById('botao');
 
+    log(person);
+
     botao.onclick = function() {
       const v1 = input1.value !== '' ? Number(input1.value) : 0;
       const v2 = input2.value !== '' ? Number(input2.value) : 0;
-      const r = v1 + v2;
+      const r = sum(v1, v2);
       resultado.value = r;
     }
   </script>
